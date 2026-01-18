@@ -18,13 +18,13 @@
 **Компиляция**
 
 ```
-nvcc -O3 task1_global_vs_shared.cu -o task1 --generate-code=arch=compute_75,code=sm_75
+nvcc -O3 task1.cu -o task1 --generate-code=arch=compute_75,code=sm_75
 ./task1
 ```
 
 **Результат**
 
- ![Задание №1](images/task1.jpg)
+ ![Задание №2](images/task1.jpg)
 
  ----
 ## Задание 2 (25 баллов)
@@ -39,13 +39,30 @@ nvcc -O3 task1_global_vs_shared.cu -o task1 --generate-code=arch=compute_75,code
 **Компиляция**
 
 ```
-nvcc -O3 task2_add_blocksize_benchmark.cu -o task2 --generate-code=arch=compute_75,code=sm_75
+nvcc -O3 task2.cu -o task2 --generate-code=arch=compute_75,code=sm_75
 ./task2
 ```
 
 **Результат**
 
- ![Задание №1](images/task2.jpg)
+ ![Задание №2](images/task2.jpg)
 
+## Задание 3 (25 баллов)
+В данном задании разработана CUDA-программа для обработки массива, позволяющая проанализировать влияние характера доступа к глобальной памяти на производительность вычислений.
+Реализованы два варианта доступа: коалесцированный и некоалесцированный.
+Для массива размером 1 000 000 элементов выполнено сравнение времени выполнения обеих реализаций.
 
+**Блок-схема**
 
+ ![Задание №3](images/task3.png)
+
+**Компиляция**
+
+```
+nvcc -O3 task3.cu -o task3 --generate-code=arch=compute_75,code=sm_75
+./task3
+```
+
+**Результат**
+
+ ![Задание №3](images/task3.jpg)

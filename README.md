@@ -80,7 +80,7 @@ nvcc -O3 task3.cu -o task3 --generate-code=arch=compute_75,code=sm_75
 **Компиляция**
 
 ```
-nvcc -O3 task4_grid_block_tuning.cu -o task4 --generate-code=arch=compute_75,code=sm_75
+nvcc -O3 task4.cu -o task4 --generate-code=arch=compute_75,code=sm_75
 ./task4
 ```
 

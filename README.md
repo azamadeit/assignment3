@@ -13,4 +13,4 @@
 
 **Блок-схема**
 
- ![Задание №1](/assignment3/images/task1.png)
+ ![Задание №1](images/task1.png)

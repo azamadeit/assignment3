@@ -14,3 +14,13 @@
 **Блок-схема**
 
  ![Задание №1](images/task1.png)
+
+**Компиляция**
+
+```
+nvcc -O3 task1_global_vs_shared.cu -o task1 --generate-code=arch=compute_75,code=sm_75
+./task1
+```
+
+**Результат**
+

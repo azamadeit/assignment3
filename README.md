@@ -36,3 +36,13 @@ nvcc -O3 task1_global_vs_shared.cu -o task1 --generate-code=arch=compute_75,code
 **Блок-схема**
 
  ![Задание №1](images/task2.png)
+
+**Компиляция**
+
+```
+nvcc -O3 task2_add_blocksize_benchmark.cu -o task2 --generate-code=arch=compute_75,code=sm_75
+./task2
+```
+
+
+

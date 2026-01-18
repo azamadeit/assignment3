@@ -24,3 +24,4 @@ nvcc -O3 task1_global_vs_shared.cu -o task1 --generate-code=arch=compute_75,code
 
 **Результат**
 
+ ![Задание №1](images/task1.jpg)
